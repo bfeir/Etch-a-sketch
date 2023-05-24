@@ -16,3 +16,13 @@ for(i=0; i<16; i++) {
     }
 
 }
+
+const cellSelection = document.querySelectorAll('.gridCell');
+cellSelection.forEach( function(element) {
+    element.addEventListener('mouseenter', () => {
+        element.style.backgroundColor = 'black';
+    } );
+    element.addEventListener('mouseleave', () => {
+        element.style.backgroundColor = 'white';
+    });
+});
